@@ -1,0 +1,11 @@
+@use '../globals/colors';
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 66.67%;
+    height: 100vh;
+    margin: 0 auto;
+    outline: 1px solid red;
+}

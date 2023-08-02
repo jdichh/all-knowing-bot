@@ -18,6 +18,7 @@ html {
  */
 body {
   margin: 0;
+  padding: 0; /* added by jason */
 }
 
 /**
@@ -323,29 +324,20 @@ body {
   color: #EEEEEE;
 }
 
-header {
-  display: flex;
-  place-content: center;
+#send-it {
+  outline: none;
+  border: none;
+  /* outline & border none are temporary */
 }
 
-span {
-  color: #5B74E3;
-}
-
-h1 {
-  font-weight: 600;
+button {
+  background-color: #5B74E3;
 }
 
 input {
   font-weight: 500;
   background-color: #303133;
   color: #BDBFC4;
-  outline: none;
-  border: none;
-  /* outline & border none are temporary */
-}
-
-#send-it {
   outline: none;
   border: none;
   /* outline & border none are temporary */
@@ -359,6 +351,25 @@ input::placeholder {
   color: #BDBFC4;
 }
 
-button {
-  background-color: #5B74E3;
+header {
+  display: flex;
+  place-content: center;
+}
+
+span {
+  color: #5B74E3;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 66.67%;
+  height: 100vh;
+  margin: 0 auto;
+  outline: 1px solid red;
 }/*# sourceMappingURL=style.css.map */

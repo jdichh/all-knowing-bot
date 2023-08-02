@@ -1,0 +1,11 @@
+@use '../globals/colors';
+
+#send-it {
+    outline: none;
+    border: none;
+    /* outline & border none are temporary */
+}
+
+button {
+    background-color: colors.$button-color;
+}

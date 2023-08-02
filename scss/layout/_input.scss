@@ -1,0 +1,15 @@
+@use '../globals/colors';
+
+input {
+    font-weight: 500;
+    background-color: colors.$input-dark;
+    color: colors.$input-text;
+    outline: none;
+    border: none;
+    /* outline & border none are temporary */
+}
+
+input::placeholder {
+    color: colors.$input-text;
+}
+

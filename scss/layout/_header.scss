@@ -1,0 +1,14 @@
+@use '../globals/colors';
+
+header {
+    display: flex;
+    place-content: center;
+}
+
+span {
+    color: colors.$button-color;
+}
+
+h1 {
+    font-weight: 600;
+}
