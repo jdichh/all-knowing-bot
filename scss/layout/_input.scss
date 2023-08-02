@@ -6,6 +6,7 @@ input {
     color: colors.$input-text;
     outline: none;
     border: none;
+    border-top: 1px solid colors.$button-color;
     /* outline & border none are temporary */
 }
 

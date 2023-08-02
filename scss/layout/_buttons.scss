@@ -3,9 +3,7 @@
 #send-it {
     outline: none;
     border: none;
-    /* outline & border none are temporary */
-}
-
-button {
+    margin-left: 10px;
     background-color: colors.$button-color;
+    /* outline & border none are temporary */
 }
