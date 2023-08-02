@@ -318,6 +318,10 @@ template {
   color: #EEEEEE;
 }
 
+.custom-send-button:hover {
+  color: #5B74E3;
+}
+
 body {
   font-family: "Assistant", sans-serif;
   background-color: #222222;
@@ -330,6 +334,13 @@ body {
   margin-left: 10px;
   background-color: #5B74E3;
   /* outline & border none are temporary */
+}
+
+#send-it:hover {
+  background-color: #EEEEEE;
+}
+#send-it:hover .custom-send-button {
+  color: #5B74E3;
 }
 
 input {
