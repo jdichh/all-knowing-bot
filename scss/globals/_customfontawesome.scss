@@ -1,0 +1,9 @@
+@use '../globals/colors';
+
+.custom-robot-icon {
+    color: colors.$button-color;
+}
+
+.custom-send-button {
+    color: colors.$off-white;
+}
