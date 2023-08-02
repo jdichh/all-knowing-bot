@@ -1,13 +1,21 @@
 @use '../globals/colors';
 
+.user-input-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
 input {
     font-weight: 500;
     background-color: colors.$input-dark;
     color: colors.$input-text;
     outline: none;
     border: none;
-    border-top: 1px solid colors.$button-color;
-    /* outline & border none are temporary */
+    border-top: 2px solid colors.$button-color;
+    border-radius: 2px;
+    padding: 0.5rem;
+    flex: 9;
 }
 
 input::placeholder {

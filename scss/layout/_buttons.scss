@@ -1,16 +1,18 @@
 @use '../globals/colors';
 
 #send-it {
-    outline: none;
     border: none;
     margin-left: 10px;
+    padding: 1rem;
     background-color: colors.$button-color;
-    /* outline & border none are temporary */
+    border-radius: 2px;
 }
 
-#send-it:hover {
+#send-it:active {
     background-color: colors.$off-white;
     .custom-send-button {
         color: colors.$button-color;
     }
 }
+
+

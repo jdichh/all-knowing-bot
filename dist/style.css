@@ -318,10 +318,6 @@ template {
   color: #EEEEEE;
 }
 
-.custom-send-button:hover {
-  color: #5B74E3;
-}
-
 body {
   font-family: "Assistant", sans-serif;
   background-color: #222222;
@@ -329,18 +325,24 @@ body {
 }
 
 #send-it {
-  outline: none;
   border: none;
   margin-left: 10px;
+  padding: 1rem;
   background-color: #5B74E3;
-  /* outline & border none are temporary */
+  border-radius: 2px;
 }
 
-#send-it:hover {
+#send-it:active {
   background-color: #EEEEEE;
 }
-#send-it:hover .custom-send-button {
+#send-it:active .custom-send-button {
   color: #5B74E3;
+}
+
+.user-input-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 input {
@@ -349,8 +351,10 @@ input {
   color: #BDBFC4;
   outline: none;
   border: none;
-  border-top: 1px solid #5B74E3;
-  /* outline & border none are temporary */
+  border-top: 2px solid #5B74E3;
+  border-radius: 2px;
+  padding: 0.5rem;
+  flex: 9;
 }
 
 input::-moz-placeholder {
