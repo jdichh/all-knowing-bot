@@ -1,5 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&display=swap');
+
+:root {
+    --light-black: #222222;
+    --off-white: #EEEEEE;
+    --input-dark: #303133;
+    --input-text: #BDBFC4;
+    --button-color: #5B74E3;
+}
 
 body {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    background-color: var(--light-black);
+    color: var(--off-white)
+}
+
+h1 {
+    font-weight: 600;
+}
+
+input {
+    font-weight: 500;
+    background-color: var(--input-dark);
+    color: var(--input-text);
+    outline: none;
+    border: none;
+    /* outline & border none are temporary */
+}
+
+#send-it {
+    outline: none;
+    border: none;
+    /* outline & border none are temporary */
+}
+
+.custom-send-button {
+    color: var(--off-white);
+}
+
+input::placeholder {
+    color: var(--input-text)
+}
+
+button {
+    background-color: var(--button-color);
 }
