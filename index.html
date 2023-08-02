@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Something something Chat-GPT 4.">
-    <link rel="stylesheet" href="styles/all.css">
-    <!-- <link rel="stylesheet" href="styles/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="javascript/index.js" defer></script>
     <title>Chat-GPT 4 API</title>
 </head>
 <body>
-    <h1>Hello!</h1>
+    <div class="main-container">
+        <header>
+            <h1>Chat-GPT Bot</h1>
+        </header>
+        <div class="chatbox-container">
+            <div class="chatbox-prompts">
+
+            </div>
+        </div>
+        <div class="user-input-container">
+            <input type="text" id="user-input" placeholder="Send a message, or something.">
+            <button id="send-it"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
 </body>
 </html>
