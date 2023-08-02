@@ -13,7 +13,8 @@ input {
     outline: none;
     border: none;
     border-top: 2px solid colors.$button-color;
-    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     padding: 0.5rem;
     flex: 9;
 }
@@ -21,4 +22,5 @@ input {
 input::placeholder {
     color: colors.$input-text;
 }
+
 
