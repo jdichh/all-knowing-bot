@@ -387,5 +387,25 @@ h1 {
   max-width: 66.67%;
   height: 100vh;
   margin: 0 auto;
-  outline: 1px solid red;
+}
+
+.chatbox-container {
+  flex: 1;
+}
+
+.chats {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  background-color: #303133;
+  margin: 0.75rem;
+}
+
+#ai-icon {
+  color: #5B74E3;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  margin-left: 1rem;
 }/*# sourceMappingURL=style.css.map */

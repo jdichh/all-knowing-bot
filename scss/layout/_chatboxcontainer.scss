@@ -1,0 +1,22 @@
+@use '../globals/colors';
+
+.chatbox-container {
+    flex: 1
+}
+
+.chats {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    background-color: colors.$input-dark;
+    margin: 0.75rem;
+}
+
+#ai-icon {
+    color: colors.$button-color;
+}
+
+.icon {
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+}

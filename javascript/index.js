@@ -9,18 +9,18 @@ userInput.addEventListener("keydown", (e) => {
 });
 
 function appendMessage(sender, message) {
-  const messageDiv = document.createElement("div");
+  const messageDiv = document.createElement("p");
   const iconDiv = document.createElement("div");
   const icon = document.createElement("i");
   const chatDiv = document.createElement("div");
 
-  chatDiv.classList.add("chatbox-prompts");
+  chatDiv.classList.add("chats");
   iconDiv.classList.add("icon");
   messageDiv.classList.add(sender);
   messageDiv.innerText = message;
 
   if (sender == "user") {
-    icon.classList.add("fa-regular", "fa-user");
+    icon.classList.add("fa-solid", "fa-user");
     iconDiv.setAttribute("id", "user-icon");
   } else {
     icon.classList.add("fa-solid", "fa-robot");
