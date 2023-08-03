@@ -1,7 +1,10 @@
 @use '../globals/colors';
 
 .chatbox-container {
-    flex: 1
+    flex: 1;
+    outline: 1px solid colors.$input-dark;
+    margin-inline: 11px;
+    border-radius: 2px;
 }
 
 .chats {
@@ -10,6 +13,7 @@
     font-size: 1.1rem;
     background-color: colors.$input-dark;
     margin: 0.75rem;
+    border-radius: 2px;
 }
 
 #ai-icon {
