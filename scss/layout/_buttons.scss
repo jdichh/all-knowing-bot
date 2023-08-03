@@ -6,11 +6,13 @@
     background-color: colors.$button-color;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+    cursor: pointer;
 }
 
 #send-it:active {
-    background-color: colors.$off-white;
+    background-color: colors.$button-color-pressed;
     .custom-send-button {
-        color: colors.$button-color;
+        color: colors.$off-white-pressed;
     }
 }
+

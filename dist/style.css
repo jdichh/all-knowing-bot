@@ -330,13 +330,14 @@ body {
   background-color: #5B74E3;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+  cursor: pointer;
 }
 
 #send-it:active {
-  background-color: #EEEEEE;
+  background-color: #4658a5;
 }
 #send-it:active .custom-send-button {
-  color: #5B74E3;
+  color: #e6e6e6;
 }
 
 .user-input-container {
@@ -345,24 +346,24 @@ body {
   justify-content: space-between;
 }
 
-input {
+#user-input {
+  font-size: 1.1rem;
   font-weight: 500;
   background-color: #303133;
   color: #BDBFC4;
   outline: none;
   border: none;
-  border-top: 2px solid #5B74E3;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   padding: 0.5rem;
   flex: 9;
 }
 
-input::-moz-placeholder {
+#user-input::-moz-placeholder {
   color: #BDBFC4;
 }
 
-input::placeholder {
+#user-input::placeholder {
   color: #BDBFC4;
 }
 
