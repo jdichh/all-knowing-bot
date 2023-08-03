@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const chatBoxLog = document.getElementById("chatbox-prompts");
 const userInput = document.getElementById("user-input");
 const sendButton = document.getElementById("send-it");
@@ -10,4 +12,31 @@ userInput.addEventListener("keydown", (e) => {
 
 function sendMessage() {
     alert("Hello!")
+}
+
+const url = 'https://open-ai21.p.rapidapi.com/conversationllama';
+const options = {
+	method: 'POST',
+	headers: {
+		'content-type': 'application/json',
+		'X-RapidAPI-Key': process.env.API_KEY,
+		'X-RapidAPI-Host': 'open-ai21.p.rapidapi.com'
+	},
+	body: {
+		messages: [
+			{
+				role: 'user',
+				content: 'hello'
+			}
+		],
+		web_access: false
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
 }
