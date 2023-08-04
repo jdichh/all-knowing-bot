@@ -61,6 +61,7 @@ function sendMessage() {
     }`,
   };
 
+
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
@@ -72,7 +73,7 @@ function sendMessage() {
     .catch((err) => {
       console.log(err);
       if (err.name === "TypeError") {
-        appendMessage("ai", "Error: Check your API key if it is valid.");
+        appendMessage("ai", `Error: Check the console for error details.`);
         sendButtonIcon.classList.add("fa-solid", "fa-paper-plane");
         sendButtonIcon.classList.remove("fas", "fa-spinner", "fa-pulse");
       }
