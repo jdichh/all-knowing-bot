@@ -1,5 +1,5 @@
 # The All-Knowing Bot
-A chat bot that uses ChatGPT-3.5. I did this to further enhance my API data fetching knowledge, as well as SCSS.
+A chat bot that uses LemurBot. I did this to further enhance my API data fetching knowledge, as well as SCSS. Be warned, it can be a smartass at times. 
 
 ## Project setup
 ```
