@@ -59,7 +59,7 @@ function sendMessage() {
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
-      console.log(response);
+      // console.log(response);
       appendMessage("ai", response.data.conversation.output);
       sendButtonIcon.classList.add("fa-solid", "fa-paper-plane");
       sendButtonIcon.classList.remove("fas", "fa-spinner", "fa-pulse");
@@ -67,7 +67,7 @@ function sendMessage() {
     .catch((err) => {
       console.log(err);
       if (err.name === "TypeError") {
-        appendMessage("ai", `Error: Check the console for error details.`);
+        appendMessage("ai", "Oops. The developer's current subscription to this API may have exceeded the hard limit of 100 queries a day. Check the console anyway to make sure that the developer of this application isn't an incompetent idiot. Thanks!");
         sendButtonIcon.classList.add("fa-solid", "fa-paper-plane");
         sendButtonIcon.classList.remove("fas", "fa-spinner", "fa-pulse");
       }
