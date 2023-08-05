@@ -41,32 +41,26 @@ function sendMessage() {
   appendMessage("user", message);
   userInput.value = "";
 
-  const url ="https://chatgpt-chatgpt3-5-chatgpt4.p.rapidapi.com/v1/chat/completions";
+  const url = 'https://lemurbot.p.rapidapi.com/chat';
   const options = {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "content-type": "application/json",
-      "X-RapidAPI-Key": `${import.meta.env.VITE_API_KEY}`,
-      "X-RapidAPI-Host": "chatgpt-chatgpt3-5-chatgpt4.p.rapidapi.com",
+      'content-type': 'application/json',
+      'X-RapidAPI-Key': `${import.meta.env.VITE_API_KEY}`,
+      'X-RapidAPI-Host': 'lemurbot.p.rapidapi.com'
     },
-    body: `{
-      "model": "gpt-3.5-turbo",
-      "messages": [
-        {
-          "role": "user",
-          "content": "${message}"
-        }
-      ],
-      "temperature": 0.8
-    }`,
+    body: JSON.stringify({
+      bot: 'dilly',
+      client: 'd531e3bd-b6c3-4f3f-bb58-a6632cbed5e2',
+      message: message,
+    })
   };
-
-
+  
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
       console.log(response);
-      appendMessage("ai", response.choices[0].message.content);
+      appendMessage("ai", response.data.conversation.output);
       sendButtonIcon.classList.add("fa-solid", "fa-paper-plane");
       sendButtonIcon.classList.remove("fas", "fa-spinner", "fa-pulse");
     })
