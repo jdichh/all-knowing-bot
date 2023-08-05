@@ -41,6 +41,9 @@ function sendMessage() {
   appendMessage("user", message);
   userInput.value = "";
 
+  // Show the generating message
+  document.getElementById('generatingMessage').style.display = 'block';
+
   const url = 'https://lemurbot.p.rapidapi.com/chat';
   const options = {
     method: 'POST',
@@ -63,6 +66,9 @@ function sendMessage() {
       appendMessage("ai", response.data.conversation.output);
       sendButtonIcon.classList.add("fa-solid", "fa-paper-plane");
       sendButtonIcon.classList.remove("fas", "fa-spinner", "fa-pulse");
+
+      // Hide the generating message
+      document.getElementById('generatingMessage').style.display = 'none';
     })
     .catch((err) => {
       console.log(err);
@@ -71,8 +77,12 @@ function sendMessage() {
         sendButtonIcon.classList.add("fa-solid", "fa-paper-plane");
         sendButtonIcon.classList.remove("fas", "fa-spinner", "fa-pulse");
       }
+
+      // Hide the generating message in case of an error
+      document.getElementById('generatingMessage').style.display = 'none';
     });
 }
+
 
 // function testMessage() {
 //   console.log("hello!");

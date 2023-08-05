@@ -310,12 +310,25 @@ template {
   display: none;
 }
 
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .custom-robot-icon {
   color: #5B74E3;
 }
 
 .custom-send-button {
   color: #EEEEEE;
+}
+
+.custom-loading-icon {
+  color: #5B74E3;
+  animation: spin-animation 2s infinite linear;
 }
 
 body {
@@ -403,6 +416,16 @@ h1 {
   background-color: #303133;
   margin: 0.75rem;
   border-radius: 2px;
+}
+
+#generatingMessage {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  background-color: #303133;
+  margin: 0.75rem;
+  border-radius: 2px;
+  padding: 1rem;
 }
 
 #ai-icon {
