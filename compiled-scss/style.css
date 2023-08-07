@@ -329,6 +329,7 @@ template {
 .custom-loading-icon {
   color: #5B74E3;
   animation: spin-animation 2s infinite linear;
+  margin-right: 0.5rem;
 }
 
 body {
@@ -426,6 +427,11 @@ h1 {
   margin: 0.75rem;
   border-radius: 2px;
   padding: 1rem;
+}
+
+#user-icon {
+  margin-left: 1.2rem;
+  margin-right: 0.65rem;
 }
 
 #ai-icon {
