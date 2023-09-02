@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +11,29 @@
     <script type="module" src="javascript/index.js" defer></script>
     <title>All-Knowing Bot</title>
 </head>
+
 <body>
-    <div class="main-container">
-        <header>
-            <h1><i class="fa-solid fa-robot fa-sm custom-robot-icon"></i> All-Knowing Bot</h1>
-        </header>
-        <div class="chatbox-container"> 
-            <div id="chatbox-prompts"></div>
-            <div id="generatingMessage" style="display: none;"><i class="fa-solid fa-rotate custom-loading-icon"></i> Processing...</div>
-        </div>
-        <div class="user-input-container">
-            <input type="text" id="user-input" placeholder="Send a message, or something." aria-label="Enter your message here.">
-            <button id="send-it" aria-label="Send your message."><i class="fa-solid fa-paper-plane fa-xl custom-send-button" id="send-it-icon"></i></button>
-        </div>
-    </div>
+    <header>
+        <h1>
+            <i class="fa-solid fa-robot fa-sm custom-robot-icon" aria-hidden="true"></i>
+            <span>All-Knowing Bot</span>
+        </h1>
+    </header>
+    <main>
+        <section class="chatbox-container">
+            <div id="chatbox-prompts" role="log" aria-live="polite"></div>
+            <div id="generatingMessage" style="display: none;" aria-hidden="true">
+                <i class="fa-solid fa-rotate custom-loading-icon" aria-hidden="true"></i> Processing...
+            </div>
+        </section>
+        <section class="user-input-container">
+            <input type="text" id="user-input" placeholder="Send a message, or something."
+                aria-label="Enter your message here.">
+            <button id="send-it" aria-label="Send your message.">
+                <i class="fa-solid fa-paper-plane fa-xl custom-send-button" id="send-it-icon" aria-hidden="true"></i>
+            </button>
+        </section>
+    </main>
 </body>
+
 </html>
