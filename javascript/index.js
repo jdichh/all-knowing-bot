@@ -82,8 +82,3 @@ function sendMessage() {
       document.getElementById('generatingMessage').style.display = 'none';
     });
 }
-
-
-// function testMessage() {
-//   console.log("hello!");
-// }

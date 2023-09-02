@@ -1,14 +1,17 @@
-@use '../globals/colors';
+@use "../globals/colors";
 
 header {
-    display: flex;
-    place-content: center;
+  display: flex;
+  place-content: center;
 }
 
 span {
-    color: colors.$button-color;
+  color: colors.$button-color;
 }
 
 h1 {
-    font-weight: 600;
+  font-weight: 600;
+  span {
+    color: colors.$off-white;
+  }
 }

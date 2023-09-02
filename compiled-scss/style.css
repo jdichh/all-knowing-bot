@@ -393,13 +393,16 @@ span {
 h1 {
   font-weight: 600;
 }
+h1 span {
+  color: #EEEEEE;
+}
 
-.main-container {
+main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 900px;
-  height: 100vh;
+  height: 90vh;
   margin: 0 auto;
 }
 
