@@ -1,5 +1,5 @@
 # The All-Knowing Bot
-A chat bot that uses LemurBot. I did this to further enhance my API data fetching knowledge, as well as SCSS. Be warned, it can be a smartass at times. 
+A chat bot that uses LemurBot from Lemur Engine. Be warned, it can be a smartass at times. 
 
 ## Project setup
 ```
